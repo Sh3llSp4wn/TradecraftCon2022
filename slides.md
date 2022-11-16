@@ -98,8 +98,6 @@ What's a humble lil' red teamer to do?
 "I'll write a compiler" 
 ~ an offensive developer, about a week before a mental breakdown
 
-There are several open source and commercial options for "compiling shellcode" in a reasonable manner. 
-
 1. _NytroRST/ShellcodeCompiler_
  1. *Pros:*
   1. It actually works!
@@ -141,6 +139,7 @@ Maybe it should be *abandoned*?
 
 What are we missing out on if we don't have better solutions to this problem?
 
+---
 _Assume we have a capibility that allows for easier complex shellcode creation_
 * _Better stagers_
  * On target prelem checks for VM/Sandbox
@@ -181,7 +180,6 @@ executable code. The BIOS's job is just to find a disk with the valid bootloader
 signature and run the code. 
 
 That is probably not written as an *ELF* or a *PE* and then stripped out right?
-
 Well hopefully not. 
 
 As it turns out this intuition is *correct*. Firmware designers and bootloader authors do not
