@@ -29,11 +29,11 @@ ret
 direct_syscall SYS_write, _write
 direct_syscall SYS_read, _read
 direct_syscall SYS_open, _open
-direct_syscall SYS_mmap, _deallocate
-direct_syscall SYS_open, _allocate
+direct_syscall SYS_munmap, _deallocate
+direct_syscall SYS_mmap, _allocate
 
 # exit is special because no return
-# I will save this byte if it kills me
+# I will save this byte even if it kills me
 _exit:
 mov rax, SYS_exit
 syscall
